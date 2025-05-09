@@ -23,3 +23,6 @@ This is a RESTful API for booking activities such as cricket, movies, or footbal
 ```bash
 git clone https://github.com/Amansagar1/MEETX-Activity_Booking_Api.git
 cd MeetX Booking App-Assignent
+npm install
+npm start ---- with Nodemon
+same with npm run dev
