@@ -27,8 +27,9 @@ app.use('/api/dev', devRoutes);
 app.use('/api/activities', activityRoutes);
 app.use('/api/bookings', bookingRoutes);
 
-app.use((req, res) => {
-  res.status(404).json({ message: 'Endpoint not found' });
+app.use((err, req, res, next) => {
+  console.error(`Error: ${err.message}`.red);
+  res.status(500).json({ message: 'Server Error' });
 });
 
 
