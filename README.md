@@ -26,3 +26,35 @@ cd MeetX Booking App-Assignent
 npm install
 npm start ---- with Nodemon
 same with npm run dev
+
+
+----for register  add in body 
+{
+  "name": "Sagar Sharma",
+  "email": "sagar@example.com",
+  "phone": "1234567890",
+  "password": "123456"
+}
+--------for login  add in body 
+{
+  "email": "sagar@example.com",
+  "password": "123456"
+}
+
+--------for activity add in body 
+
+{
+    "title": "Bangalore test",
+    "description": "Bangalore test",
+    "location": "Bangalore test",
+    "dateTime": "2024-06-15T14:00:00.000Z",
+    "_id": "681dd9ebf41923ef28f5a532",
+    "createdAt": "2025-05-09T10:33:15.837Z",
+    "updatedAt": "2025-05-09T10:33:15.837Z",
+    "__v": 0
+}
+--------for booking add in body 
+
+{
+  "activityId": "681dd9ebf41923ef28f5a532"
+}
