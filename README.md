@@ -70,3 +70,9 @@ same with npm run dev
 
 spacial for chacking password its hased or not 
 - http://localhost:5000/api/dev/users
+
+
+
+Deployed link - https://meetx-activity-booking-api-mlrp.vercel.app/
+deployed acsses test - https://meetx-activity-booking-api-mlrp.vercel.app/api/activities
+![alt text](image.png)
