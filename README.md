@@ -1,4 +1,4 @@
-# Basic Activity Booking API
+# MeetX Booking App-Assignent
 
 ## Overview
 This is a RESTful API for booking activities such as cricket, movies, or football matches. Users can register, login, view available activities, and make bookings.
@@ -6,7 +6,7 @@ This is a RESTful API for booking activities such as cricket, movies, or footbal
 ## Tech Stack
 - Node.js
 - Express.js
-- MongoDB + Mongoose
+- MongoDB Atlas
 - JWT Authentication
 - bcrypt for password hashing
 - express-validator for validation
@@ -21,5 +21,5 @@ This is a RESTful API for booking activities such as cricket, movies, or footbal
 
 ### 1. Clone Repo
 ```bash
-git clone <your-repo-url>
-cd activity-booking-api
+git clone https://github.com/Amansagar1/MEETX-Activity_Booking_Api.git
+cd MeetX Booking App-Assignent
