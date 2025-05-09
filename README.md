@@ -58,3 +58,15 @@ same with npm run dev
 {
   "activityId": "681dd9ebf41923ef28f5a532"
 }
+
+# urls
+- http://localhost:5000/api/activities
+- http://localhost:5000/api/activities
+- http://localhost:5000/api/bookings/mybookings
+- http://localhost:5000/api/bookings?activityId=681de337551df5dd84321d7e
+- http://localhost:5000/api/auth/register
+- http://localhost:5000/api/auth/login
+
+
+spacial for chacking password its hased or not 
+- http://localhost:5000/api/dev/users
