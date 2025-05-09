@@ -22,26 +22,24 @@ app.use(express.json());
 app.use(cors());
 
 
-
 app.use('/api/auth', authRoutes);
 app.use('/api/dev', devRoutes);
-
 app.use('/api/activities', activityRoutes);
 app.use('/api/bookings', bookingRoutes);
 
-app.use((req, res, next) => {
+app.use((req, res) => {
   res.status(404).json({ message: 'Endpoint not found' });
 });
 
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
   res.send({
-      activeStatus:true,
-      error:false,
-        success: true,
+    activeStatus: true,
+    error: false,
+    success: true,
     message: 'Welcome to the MeetX Booking API!',
-  })
-})
+  });
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
