@@ -71,7 +71,7 @@ const bookActivity = async (req, res) => {
         res.status(500).json({
             success: false,
             message: 'Server error',
-            error: process.env.NODE_ENV === 'development' ? err.message : undefined,
+          message : undefined,
         });
     }
 };
@@ -104,7 +104,7 @@ const getMyBookings = async (req, res) => {
         res.status(500).json({
             success: false,
             message: 'Server error',
-            error: process.env.NODE_ENV === 'development' ? err.message : undefined,
+         message : undefined,
         });
     }
 };

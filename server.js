@@ -21,10 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-///-----------this is personal dev loger---------
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
+
 
 app.use('/api/auth', authRoutes);
 app.use('/api/dev', devRoutes);
@@ -37,22 +34,18 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/api', (req, res) => {
-  res.json({
-    success: true,
+app.get('/',(req,res)=>{
+  res.send({
+      activeStatus:true,
+      error:false,
+        success: true,
     message: 'Welcome to the MeetX Booking API!',
-    version: '1.0.0',
-    environment: process.env.NODE_ENV || 'production'
-  });
-});
-
+  })
+})
 
 const PORT = process.env.PORT || 5000;
-const server = app.listen(PORT, () => {
-  console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
-  );
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 process.on('unhandledRejection', (err) => {
   console.log(`Unhandled Error: ${err.message}`.red);
